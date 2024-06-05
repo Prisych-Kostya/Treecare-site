@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог дерев</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="widget/weather-widget/build/static/js/main.42822598.js"></script>
+    <link href="widget/weather-widget/build/static/css/main.418aa2bb.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="index.html"><img src="images/tree_logo.png" class="logo"></a>
+        <span id="site-name">TreeCare</span>
+      </div>
+      <div class="auth-buttons">
+        <div id="userGreeting"></div>
+        <a href="login_register/login.html" id="loginLink">Увійти</a>
+        <a href="login_register/registration.html" id="signUpLink">Зареєструватися</a>
+      </div>
+    </div>
+  </header>
+  
+  <nav>
+    <ul class="categories">
+      <li>
+        <a href="#">Хвойні</a>
+        <ul class="subcategories">
+          <li><a href="trees/coniferous/spruce/spruce.html">Ялина</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Листяні</a>
+        <ul class="subcategories">
+          <li><a href="trees/deciduous/ash/ash.html">Ясен</a></li>
+          <li><a href="deciduous/oak.html">Дуб</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Плодові</a>
+        <ul class="subcategories">
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- розділ для прогнозу погоди -->
+  <div class="weather-section">
+    <div class="weather-header">
+      <h2>Прогноз погоди</h2>
+      <span class="toggle-icon">&#9660;</span>
+    </div>
+    <!-- сам віджет погоди -->
+    <div class="weather-content">
+      <div id="root"></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="site-description">
+      <h2>Про сайт</h2>
+      <p>Ласкаво просимо на TreeCare - ресурс для отримання інформації про дерева, їх характеристик, ареалу розповсюдження та іншої інформації.</p>
+      <p>Наша мета - допомогти вам дізнатися більше про різні види дерев, їх характеристики та способи турботи про них.</p>
+      <p>Тут ви знайдете описи хвойних, листяних та плодових дерев, а також корисні поради щодо їх вирощування та підтримки здоров'я</p>
+    </section>
+  
+    <section class="interesting-facts">
+      <h2>Цікаві факти про дерева</h2>
+      <ul>
+        <li>Дерева є найстарішими живими організмами на Землі. Деякі з них можуть жити тисячі років!</li>
+        <li>Дерева виробляють кисень, який ми використовуємо для дихання, і поглинають вуглекислий газ, що допомагає боротися зі зміною клімату.</li>
+        <li>Одне доросле дерево може поглинати до 48 фунтів вуглекислого газу на рік.</li>
+      </ul>
+    </section>
+  
+    <section class="sahara-green-wall">
+      <h2>Проект Sahara Green Wall</h2>
+      <p>Sahara Green Wall - це амбітний проект, метою якого є висадження смуги дерев шириною 8000 кілометрів через увесь Африканський континент, щоб зупинити розширення пустелі Сахара.</p>
+      <p>Цей проект не тільки допоможе відновити ландшафт, але й забезпечить засоби до існування для місцевих громад</p>
+
+      <div class="gallery-container">
+        <div class="gallery">
+          <img src="images/green-wall-proj/green-wall-1.png">
+          <img src="images/green-wall-proj/green-wall-2.png">
+          <img src="images/green-wall-proj/green-wall-3.png">
+          <img src="images/green-wall-proj/green-wall-4.png">
+          <img src="images/green-wall-proj/green-wall-5.png">
+        </div>
+      </div>
+      
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bHE2AowASDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Каталог дерев</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

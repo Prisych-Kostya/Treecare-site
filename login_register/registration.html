@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="../index.html"><img src="../images/tree_logo.png" class="logo"></a>
+        <span id="site-name">TreeCare</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <div class="form-container">
+        <p>Please enter your information below</p>
+        <form id="signUpForm">
+          <input type="text" id="username" placeholder="Username" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html" id="loginLink">Log in</a></p>
+        <p id="registrationMessage" class="message"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container"></div>
+  </footer>
+  <script src="register.js"></script>
+</body>
+</html>
+
+
+
